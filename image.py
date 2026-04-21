@@ -9,7 +9,7 @@ if img is None:
     print("이미지를 불러올 수 없습니다.")
     exit()
 
-print("이미지 크기:", img.shape)
+print("이미지 크기 출력:", img.shape)
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
