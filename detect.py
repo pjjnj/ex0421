@@ -1,4 +1,6 @@
 import cv2
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 import numpy as np
 
@@ -28,5 +30,5 @@ cv2.putText(img, label, (30, 40), cv2.FONT_HERSHEY_SIMPLEX,
             1, (0, 255, 0), 2)
 
 # 결과 저장
-cv2.imwrite("result_practice.jpg", image)
+cv2.imwrite("result_practice.jpg", img)
 print("결과 저장 완료")
